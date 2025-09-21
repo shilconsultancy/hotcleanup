@@ -1,0 +1,7 @@
+0000.000 (1) Opened log file at time: Mon, 25 Aug 2025 03:51:27 +0000 on https://shokinfurniture.com
+0000.001 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.25.6 WP: 6.8.2 PHP: 8.1.31 (litespeed, Linux sg-nme-web1859.main-hosting.eu 5.14.0-503.23.2.el9_5.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Feb 12 05:52:18 EST 2025 x86_64) MySQL: 10.11.10-MariaDB-log (max packet size=1073741824) WPLANG: en_US Server: LiteSpeed safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 28.3M | 30M) multisite: N openssl: OpenSSL 3.0.7 1 Nov 2022 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.001 (1) Free space on disk containing Updraft's temporary directory: 4593482.9 MB
+0000.002 (1) Requesting backup semaphore lock (6df57999a03c)
+0000.006 (1) [Debug] Lock option (updraft_lock_6df57999a03c, oOSz1pI6z_options) was created in the database
+0000.006 (1) [Info] Lock (updraft_lock_6df57999a03c, oOSz1pI6z_options) acquired after initialising the database
+0000.007 (1) This backup task (6df57999a03c) is either complete or began over 2 days ago: ending (1756093887.7097, ) (existing jobdata keys: )

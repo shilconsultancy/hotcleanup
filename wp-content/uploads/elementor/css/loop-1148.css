@@ -1,0 +1,27 @@
+.elementor-1148 .elementor-element.elementor-element-8c9cd8a{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--gap:20px 0px;--row-gap:20px;--column-gap:0px;--padding-top:10px;--padding-bottom:10px;--padding-left:10px;--padding-right:10px;}.elementor-1148 .elementor-element.elementor-element-8c9cd8a.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-widget-theme-post-featured-image .widget-image-caption{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-1148 .elementor-element.elementor-element-18a9786 img{height:200px;}.elementor-widget-woocommerce-product-title .elementor-heading-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );color:var( --e-global-color-primary );}.elementor-1148 .elementor-element.elementor-element-cc52361{text-align:center;}.elementor-1148 .elementor-element.elementor-element-cc52361 .elementor-heading-title{font-family:"Cormorent", Sans-serif;font-size:20px;font-weight:600;color:#000000;}.elementor-1148 .elementor-element.elementor-element-a4a66de{margin:0px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;padding:0px 0px 10px 0px;text-align:justify;}.woocommerce .elementor-1148 .elementor-element.elementor-element-a4a66de .woocommerce-product-details__short-description{font-family:"Play-fair display", Sans-serif;font-size:15px;font-weight:400;text-transform:none;text-decoration:none;line-height:25px;letter-spacing:-0.3px;}.elementor-widget-button .elementor-button{background-color:var( --e-global-color-accent );font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-weight:var( --e-global-typography-accent-font-weight );}.elementor-1148 .elementor-element.elementor-element-ac21e56 .elementor-button{background-color:#FFFFFF;font-family:"Cormorent", Sans-serif;font-weight:500;text-transform:capitalize;text-shadow:0px 0px 10px rgba(0,0,0,0.3);fill:#000000;color:#000000;border-style:solid;border-width:1px 1px 1px 1px;border-color:#000000;border-radius:0px 0px 0px 0px;padding:6px 35px 6px 35px;}.elementor-1148 .elementor-element.elementor-element-ac21e56 .elementor-button:hover, .elementor-1148 .elementor-element.elementor-element-ac21e56 .elementor-button:focus{background-color:#000000;color:#FFF2F2;}.elementor-1148 .elementor-element.elementor-element-ac21e56{margin:0px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;}.elementor-1148 .elementor-element.elementor-element-ac21e56 .elementor-button:hover svg, .elementor-1148 .elementor-element.elementor-element-ac21e56 .elementor-button:focus svg{fill:#FFF2F2;}@media(min-width:768px){.elementor-1148 .elementor-element.elementor-element-8c9cd8a{--content-width:100%;}}/* Start custom CSS for woocommerce-product-short-description, class: .elementor-element-a4a66de */.ply-wood-description {
+  min-height: 100px;   /* same height for all descriptions */
+  max-height: 20px;   /* cut off longer text */
+  overflow: hidden;
+  margin-bottom: 16px;
+}/* End custom CSS */
+/* Start custom CSS for button, class: .elementor-element-ac21e56 */.ply-wood-buttons {
+  margin-top: 30px; /* pushes button down */
+  display: inline-block;
+  
+  
+  
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}/* End custom CSS */
+/* Start custom CSS for container, class: .elementor-element-8c9cd8a */.ply-wood-card {
+  background: #fff; 
+  border-radius: 12px;
+  padding: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+
+.ply-wood-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12); /* soft, light shadow */
+}/* End custom CSS */

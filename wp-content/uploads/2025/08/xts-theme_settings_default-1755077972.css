@@ -1,0 +1,251 @@
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: "woodmart-font";
+	src: url("//shokinfurniture.com/wp-content/themes/woodmart/fonts/woodmart-font-1-400.woff2?v=7.6.0") format("woff2");
+}
+
+:root {
+	--wd-text-font: "Lato", Arial, Helvetica, sans-serif;
+	--wd-text-font-weight: 400;
+	--wd-text-color: #767676;
+	--wd-text-font-size: 14px;
+	--wd-title-font: "Poppins", Arial, Helvetica, sans-serif;
+	--wd-title-font-weight: 600;
+	--wd-title-color: #242424;
+	--wd-entities-title-font: "Poppins", Arial, Helvetica, sans-serif;
+	--wd-entities-title-font-weight: 500;
+	--wd-entities-title-color: #333333;
+	--wd-entities-title-color-hover: rgb(51 51 51 / 65%);
+	--wd-alternative-font: "Lato", Arial, Helvetica, sans-serif;
+	--wd-widget-title-font: "Poppins", Arial, Helvetica, sans-serif;
+	--wd-widget-title-font-weight: 600;
+	--wd-widget-title-transform: uppercase;
+	--wd-widget-title-color: #333;
+	--wd-widget-title-font-size: 16px;
+	--wd-header-el-font: "Lato", Arial, Helvetica, sans-serif;
+	--wd-header-el-font-weight: 700;
+	--wd-header-el-transform: uppercase;
+	--wd-header-el-font-size: 13px;
+	--wd-primary-color: #83b735;
+	--wd-alternative-color: #fbbc34;
+	--wd-link-color: #333333;
+	--wd-link-color-hover: #242424;
+	--btn-default-bgcolor: #f7f7f7;
+	--btn-default-bgcolor-hover: #efefef;
+	--btn-accented-bgcolor: #83b735;
+	--btn-accented-bgcolor-hover: #74a32f;
+	--wd-form-brd-width: 2px;
+	--notices-success-bg: #459647;
+	--notices-success-color: #fff;
+	--notices-warning-bg: #E0B252;
+	--notices-warning-color: #fff;
+}
+.woodmart-woocommerce-layered-nav .wd-scroll-content {
+	max-height: 223px;
+}
+.wd-popup.wd-age-verify {
+	--wd-popup-width: 500px;
+}
+.wd-popup.wd-promo-popup {
+	background-color: #111111;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left center;
+	--wd-popup-width: 800px;
+}
+.page-title-default {
+	background-color: #0a0a0a;
+	background-image: none;
+	background-size: cover;
+	background-position: center center;
+}
+.footer-container {
+	background-color: #ffffff;
+	background-image: none;
+}
+.wd-popup.popup-quick-view {
+	--wd-popup-width: 920px;
+}
+:root{
+--wd-form-brd-radius: 0px;
+--btn-default-color: #333;
+--btn-default-color-hover: #333;
+--btn-accented-color: #fff;
+--btn-accented-color-hover: #fff;
+--btn-default-brd-radius: 0px;
+--btn-default-box-shadow: none;
+--btn-default-box-shadow-hover: none;
+--btn-default-box-shadow-active: none;
+--btn-default-bottom: 0px;
+--btn-accented-bottom-active: -1px;
+--btn-accented-brd-radius: 0px;
+--btn-accented-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .15);
+--btn-accented-box-shadow-hover: inset 0 -2px 0 rgba(0, 0, 0, .15);
+--wd-brd-radius: 0px;
+}
+
+
+
+body{
+	margin:0px!important;
+	padding:0px!important;
+}
+/* Import Playfair Display font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+/* Popup Container */
+#order-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  max-width: 90%;
+  height: auto;
+  background-color: black;
+  z-index: 10001;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  padding: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Dark overlay */
+#popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 10000;
+}
+
+/* Popup content center */
+.popup-content {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Close button */
+#popup-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Heading styling */
+.popup-content h2 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Button row (two fixed halves) */
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 10px;                 /* primary spacing */
+  width: 100%;
+}
+
+/* Fallback if 'gap' is ignored/overridden */
+@supports not (gap: 10px) {
+  .button-row .popup-btn + .popup-btn { margin-left: 10px; }
+}
+
+/* Buttons */
+.popup-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 calc(50% - 5px); /* two equal buttons with 10px total gap */
+  min-width: 0;
+  padding: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.25s ease;
+  border: none;              /* no border on both */
+  color: white;
+  background: black;
+}
+
+/* Phone button: black -> white on hover */
+.call-btn {
+  background: black;
+  color: white;
+}
+.call-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* WhatsApp button: black -> green on hover */
+.whatsapp-btn {
+  background: black;
+  color: white;
+}
+.whatsapp-btn:hover {
+  background: #25D366;       /* WhatsApp green */
+  color: white;
+}
+
+/* Order now button outside popup */
+.order-now-btn {
+ 
+  color: black;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Playfair Display', serif;
+  transition: all 0.3s ease;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  #order-popup {
+    width: 90%;
+    padding: 15px;
+  }
+  .popup-content h2 {
+    font-size: 24px;
+  }
+  .button-row {
+    flex-direction: column;  /* stack on tablet/mobile */
+    gap: 10px;
+  }
+  .popup-btn {
+    flex: 1 1 100%;
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #order-popup {
+    width: 95%;
+    padding: 10px;
+  }
+  .popup-content h2 {
+    font-size: 20px;
+  }
+  .popup-btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+}

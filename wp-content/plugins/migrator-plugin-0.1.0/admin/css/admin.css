@@ -1,0 +1,212 @@
+/**
+ * Admin styles for Custom Migrator plugin
+ */
+
+.custom-migrator-section {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.custom-migrator-section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.custom-migrator-controls {
+    margin: 20px 0;
+}
+
+.custom-migrator-section table {
+    width: 100%;
+}
+
+.custom-migrator-section .notice-warning {
+    color: #e67e22;
+    font-weight: 500;
+}
+
+#export-status-text {
+    vertical-align: middle;
+    font-weight: 500;
+}
+
+#export-files-table .button {
+    margin-right: 5px;
+}
+
+#export-files-table .dashicons {
+    margin-right: 2px;
+}
+
+/* Progress Bar */
+.export-progress-bar {
+    height: 20px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.export-progress-bar-inner {
+    background-color: #0073aa;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s;
+}
+
+/* Added styles for improved UI */
+#export-log-preview {
+    background: #f9f9f9;
+    padding: 8px;
+    border-left: 3px solid #0073aa;
+    font-family: monospace;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.export-status-waiting {
+    color: #0073aa;
+}
+
+.export-status-error {
+    color: #dc3232;
+}
+
+.export-status-done {
+    color: #46b450;
+}
+
+/* S3 Upload Styles */
+.s3-upload-section {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.s3-upload-section h3 {
+    margin-top: 0;
+}
+
+.s3-upload-section .form-table th {
+    width: 200px;
+    padding: 15px 10px 15px 0;
+}
+
+.s3-upload-section .form-table td {
+    padding: 15px 10px;
+}
+
+.s3-upload-section input[type="text"] {
+    width: 100%;
+    max-width: 600px;
+}
+
+#s3-upload-spinner {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* Resume progress styling */
+.resume-progress-info {
+    background: #f7fcff;
+    border-left: 4px solid #0073aa;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+
+.resume-progress-info p {
+    margin: 5px 0;
+}
+
+.resume-progress-info strong {
+    font-weight: 600;
+}
+
+/* Plugin deletion styling - Compact header button */
+.custom-migrator h1 {
+    position: relative;
+    overflow: hidden; /* Clear floats */
+}
+
+#delete-plugin {
+    background-color: #dc3232 !important;
+    border-color: #dc3232 !important;
+    color: white !important;
+    transition: background-color 0.2s;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    font-size: 13px;
+    height: 32px;
+    line-height: 30px;
+    padding: 0 12px;
+}
+
+#delete-plugin:hover:not(:disabled) {
+    background-color: #b32d2e !important;
+    border-color: #b32d2e !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+#delete-plugin:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+#delete-plugin .dashicons {
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+#delete-plugin-status {
+    clear: both;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+#delete-plugin-status .dashicons {
+    margin-right: 5px;
+}
+
+/* Spinning animation for loading states */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+/* Responsive improvements */
+@media screen and (max-width: 782px) {
+    .custom-migrator-section td,
+    .custom-migrator-section th {
+        display: block;
+        width: 100%;
+    }
+    
+    .custom-migrator-section th {
+        padding-bottom: 0;
+    }
+    
+    .s3-upload-section .form-table th {
+        width: 100%;
+    }
+    
+    /* Mobile responsive for delete button */
+    #delete-plugin {
+        float: none !important;
+        display: block;
+        margin: 10px 0 0 0;
+        width: auto;
+    }
+    
+    .custom-migrator h1 {
+        text-align: left;
+    }
+}
